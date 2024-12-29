@@ -1,17 +1,16 @@
 import React from 'react';
-import './App.css';
+import 'css/App.css';
+import '/Navbar.js'
+import Alert from 'bootstrap'
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
-
   return (
       <div className="App min-vh-100 d-flex justify-content-center align-items-center">
-        <div>
-          <h1>Hello</h1>
-        </div>
+        <NavBarTemplate />
       </div>
   );
 }
