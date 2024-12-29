@@ -10,7 +10,7 @@ function App() {
   return (
       <div className="App min-vh-100 d-flex justify-content-center align-items-center">
         <div>
-          <p>Hello</p>
+          <h1>Hello</h1>
         </div>
       </div>
   );
