@@ -14,7 +14,6 @@ import * as serviceWorker from "./serviceWorker";
 register({
   // Specify the pages that navi-app should statically build, by passing in a
   // Switch object.
-  routes,
 
   // The default create-react-app renderer needs access to the App component.
   // Learn about custom static renderers at:
