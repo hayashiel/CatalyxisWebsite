@@ -1,6 +1,6 @@
 import React from 'react';
 import 'css/App.css';
-import '/Navbar.js'
+import '/Navbar.js';
 import Alert from 'bootstrap'
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";

@@ -4,4 +4,4 @@ import App from 'App';
 
 const myFirstElement = <h1>Hello React!</h1>
 
-const root = ReactDOM.render(myFirsElement, document.getElementById('root'));
+const root = ReactDOM.render(App, document.getElementById('root'));
