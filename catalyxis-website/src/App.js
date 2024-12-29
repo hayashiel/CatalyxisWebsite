@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link, View, NotFoundBoundary, useLoadingRoute } from 'react-navi';
-import { MDXProvider } from '@mdx-js/react';
 import './App.css';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,42 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
-  let loadingRoute = useLoadingRoute()
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <nav className="App-nav">
-          <Link href='/' activeClassName='active' exact>
-            Home
-          </Link>
-          <Link href='/getting-started/' activeClassName='active'>
-            Getting Started
-          </Link>
-        </nav>
-      </header>
-
-      <main>
-        <NotFoundBoundary render={renderNotFound}>
-          <div
-            // Only add the `active` class to this element while the
-            // next page is loading, triggering a CSS animation to
-            // show or hide the loading bar.
-            className={`
-              App-loading-indicator
-              ${loadingRoute ? 'active' : ''}
-            `}
-          />
-          <MDXProvider components={{
-            // Use Navi's <Link> component to render links in
-            // Markdown files, ensuring navigation is handled by Navi.
-            a: Link,
-          }}>
-            <View />
-          </MDXProvider>
-        </NotFoundBoundary>
-      </main>
-    </div>
+      <div className="App min-vh-100 d-flex justify-content-center align-items-center">
+        <div>
+          <ThemeSwitcher />
+        </div>
+      </div>
   );
 }
 
