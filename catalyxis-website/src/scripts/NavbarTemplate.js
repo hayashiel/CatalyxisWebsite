@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-boostrap/NavDropdown';
 
 
-function NavBarTemplate({props}) {
+export function NavBarTemplate({props}) {
     let theme = props.theme;
     return (
         <Navbar expand="lg" className="bg-body-teritary" bg={theme} data-bs-theme="primary">
