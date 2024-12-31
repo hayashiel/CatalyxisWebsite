@@ -1,6 +1,6 @@
-import { React } from 'react';
+import React from 'react';
 import 'css/App.css';
-import 'scripts/NavBarTemplate';
+import 'scripts/NavBarTemplate.js';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
